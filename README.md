@@ -13,26 +13,27 @@ This repository demonstrates how to automatically deliver a pre-generated PDF fi
 - 📲 **Telegram** using a bot
 - 💬 **Discord** using a webhook
 
-The process is based on minimal configuration and fully customizable.
+The process is minimalistic, portable, and fully customizable.
 
 ---
 
-## 🗂️ Repository Structure
+## 📁 Repository Contents
 
-📁 finance-forecast-dispatcher/
-├── config.json # API credentials for Telegram and Discord
-├── discord_report.py # Sends report.pdf to Discord via webhook
-├── expenses.py # (Optional) Generates sample expense data
-├── forecast_expenses.py # (Optional) Forecasts future expenses
-├── report.pdf # The PDF file to be sent
-├── send_report_bot.py # Sends report.pdf to Telegram via Bot API
-└── README.md # Project documentation
+| File | Description |
+|------|-------------|
+| `config.json`         | API keys and credentials for Telegram and Discord |
+| `send_report_bot.py`  | Sends the PDF report to Telegram |
+| `discord_report.py`   | Sends the PDF report to Discord |
+| `report.pdf`          | Sample financial report (sent by scripts) |
+| `expenses.py`         | (Optional) Script to generate sample expenses |
+| `forecast_expenses.py`| (Optional) Simple forecasting module |
+| `README.md`           | Project documentation |
 
 ---
 
 ## ⚙️ Configuration
 
-Before running the scripts, make sure to update your `config.json`:
+Update `config.json` with your bot credentials and webhook:
 
 ```json
 {
@@ -46,6 +47,11 @@ Before running the scripts, make sure to update your `config.json`:
 }
 ```
 📌 report.pdf must exist in the root directory. You can generate it yourself or reuse the one provided.
+
+
+## 🖼 Report Preview
+Here's what the generated PDF report looks like:
+![image](https://github.com/user-attachments/assets/fc68085b-0179-4129-a1ed-7a63df0afdcd)
 
 ## 🧩 Extra Modules
 These scripts are not required for dispatching but can be used for additional automation or as mock data generators:
