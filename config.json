@@ -1,0 +1,9 @@
+{
+  "telegram": {
+    "bot_token": "your token",
+    "chat_id": "our id"
+  },
+  "discord": {
+    "webhook_url": "https://discord.com/api/webhooks/...."
+  }
+}
